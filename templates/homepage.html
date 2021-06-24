@@ -1,0 +1,77 @@
+<!Doctype html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='style.css') }}"></link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"></link>
+</head>
+
+<body class="body">
+  <section>
+    <section class= "homepage_info">
+      Welcome! This website will predict <br>you the selling price of your car for you. <br> Just fill in the form and press <br> the below button to get the selling <br> price details.
+    <form action="{{ url_for('calc_price')}}" method="post">
+    <button class="predictbutton" onclick= "price_cal()">Calculate</button>
+    </section>
+
+    <section>
+      <div>
+        <form action="{{ url_for('calc_price')}}" method="post">
+
+          <div class="form-labeldiv1">
+            <label>Car's Original Price: </label>
+            <input type="text" class="form-text1" name="ori_price" id="original_price" required="required">
+          </div>
+
+          <div class="form-labeldiv1">
+            <label> Driven Kilometers: </label>
+            <input type="text" class="form-text2" id="original_price" name="kms_driven" required="required">
+          </div>
+
+          <div class="form-labeldiv1">
+            <label for="cars">Owner Type: </label>
+            <select name="owner_type" id="cars" class="form-text3" required="required">
+                <option value="select" selected>Select </option>
+                <option value="first">First hand</option>
+                <option value="second">Second hand</option>
+                <option value="third">Third hand</option>
+            </select>
+          </div>
+
+          <div class="form-labeldiv1">
+                <label for="car_age"> Age of car: </label>
+                <input type="text" name="car_age" class="form-text4" required="required">
+          </div>
+
+          <div class = "form-labeldiv1">
+                <label> Fuel Type: </label>
+                <select class="form-text5" name="fuel_type" required="required">
+                    <option value="select" selected>Select </option>
+                    <option value="petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                </select>
+          </div>
+
+          <div class = "form-labeldiv1">
+                <label> Seller Type: </label>
+                <select class="form-text6" name="seller_type" required="required">
+                    <option value="select" selected>Select </option>
+                    <option value="Dealer">Dealer</option>
+                    <option value="Individual">Individual</option>
+                </select>
+          </div>
+
+          <div class = "form-labeldiv1">
+                <label> Gear Type: </label>
+                <select class="form-text7" name="gear_type" required="required">
+                    <option value="select" selected>Select </option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automatic">Automatic</option>
+                </select>
+          </div>
+
+        </form>
+      </div>
+  </section>
+
+</body>

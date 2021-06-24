@@ -1,0 +1,99 @@
+.body {
+  background-color: #3f0d12;
+  background: linear-gradient(to right, #000000 0%, #800000 53%);
+
+}
+
+.homepage_info {
+  color: white;
+  font-style: Helvetica;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 13%;
+  float:left;
+  width:50%;
+}
+
+.predictbutton {
+  background-color: #00ff00;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-weight: normal;
+  width: 100px;
+
+}
+
+.form-labeldiv1 {
+  color: white;
+  margin-left: 550px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight:400
+}
+
+.form-text1 {
+  margin-top: 9px;
+  width: 100px;
+  margin-left: 14px;
+  border-radius: 10px;
+}
+
+.form-text2 {
+  margin-left: 20px;
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.form-text3 {
+  margin-left: 55px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.form-text4 {
+  margin-left: 65px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.form-text5 {
+  margin-left: 70px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.form-text6 {
+  margin-left: 60px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.form-text7 {
+  margin-left: 65px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.result_output {
+  color:white;
+  font-style: Helvetica;
+  margin-top: 10px;
+}
